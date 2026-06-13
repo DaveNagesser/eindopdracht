@@ -1,15 +1,10 @@
 import '../css/style.css'
 import { Actor, Engine, Vector, DisplayMode, CollisionType } from "excalibur"
 import { Resources, ResourceLoader } from './resources.js'
-import { Fish } from './fish.js'
 import { StartScene } from './scenes/startscene.js'
 import { Levelone } from './scenes/levelone.js'
 
 export class Game extends Engine {
-
-    score = 0;
-    scoreLabel;
-
     constructor() {
         super({ 
             width: 1280,
@@ -30,5 +25,3 @@ export class Game extends Engine {
 }
 
 new Game()
-
-//this.on{'pointerdown', () => this.handlePointerDown()};
