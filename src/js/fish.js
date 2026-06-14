@@ -22,10 +22,7 @@ export class Fish extends Actor {
 
         this.pos = new Vector(x, y);
 
-        this.vel = new Vector(
-            Math.random() * -100 - 50,
-            0
-        );
+        this.vel = new Vector(Math.random() * -100 - 50, 0);
 
         const sc = Math.random() * 0.5 + 0.2;
         this.scale = new Vector(sc, sc);

@@ -21,11 +21,11 @@ export class Levelone extends Scene {
         const bg = new Background();
         this.add(bg);
 
-        // speler
+
         this.player = new Player(engine.drawWidth / 2, engine.drawHeight * 0.3);
         this.add(this.player);
 
-        // dobber
+
         this.bobber = new Bobber(this.player);
         this.add(this.bobber);
 

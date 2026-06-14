@@ -8,8 +8,10 @@ export class ScoreLabel extends Label {
             text: "Score : 0",
             pos: new Vector(20, 40),
             fontUnit: FontUnit.Px,
-            color: Color.White
+            color: Color.White,
         });
+        this.scale = new Vector(2, 2);
+
     }
 
     updateScore(score) {
