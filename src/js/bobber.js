@@ -1,4 +1,4 @@
-import { Actor, CollisionType, Vector } from "excalibur";
+import { Actor, CollisionType, Keys, Vector } from "excalibur";
 import { Fish } from "./fish.js";
 import { Bomb } from "./bomb.js";
 import { Resources } from "./resources.js";
@@ -53,10 +53,10 @@ export class Bobber extends Actor {
         }
 
         const moveSpeed = 150 * delta / 1000;
-        if (engine.input.keyboard.isHeld("ArrowLeft") || engine.input.keyboard.isHeld("a")) {
+        if (engine.input.keyboard.isHeld(Keys.Left)) {
             this.pos.x -= moveSpeed;
         }
-        if (engine.input.keyboard.isHeld("ArrowRight") || engine.input.keyboard.isHeld("d")) {
+        if (engine.input.keyboard.isHeld(Keys.Right)) {
             this.pos.x += moveSpeed;
         }
 

@@ -50,7 +50,7 @@ export class Levelone extends Scene {
         const bombTop = minUnderPlayer;
         const bombBottom = engine.drawHeight - 40;
 
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 6; i++) {
             const fish = new Fish(
                 this.getSpawnX(engine),
                 this.randomBetween(normalTop, normalBottom),
@@ -62,7 +62,7 @@ export class Levelone extends Scene {
             this.add(fish);
         }
 
-        for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < 4; i++) {
             const fish = new KevinCCucumber(
                 this.getSpawnX(engine),
                 this.randomBetween(kevinTop, kevinBottom),
@@ -72,7 +72,7 @@ export class Levelone extends Scene {
             this.add(fish);
         }
 
-        for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < 3; i++) {
             const fish = new BetterShark(
                 this.getSpawnX(engine),
                 this.randomBetween(sharkTop, sharkBottom),
@@ -83,7 +83,7 @@ export class Levelone extends Scene {
             this.add(fish);
         }
 
-        for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < 3; i++) {
             const fish = new TravisScottFish(
                 this.getSpawnX(engine),
                 this.randomBetween(travisTop, travisBottom),
